@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 
 # standard library
-import urllib3
-import sys
 import json
+import sys
 
 # 3rd party imports
 import click
+import urllib3
 from pyaml_env import parse_config
 
 # local imports
-from stock_tracker.utils.logger import Logger
 from stock_tracker.core.core import Stock
 from stock_tracker.utils.dot import Dot
+from stock_tracker.utils.logger import Logger
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 

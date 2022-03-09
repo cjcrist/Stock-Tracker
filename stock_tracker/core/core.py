@@ -1,8 +1,13 @@
 # core.py
 
+# standard library imports
 import logging
+
+# 3rd party imports
 import requests
 from requests import HTTPError
+
+# local imports
 from stock_tracker.utils.dot import Dot
 
 LOGGER = logging.getLogger('stocktracker.core')
